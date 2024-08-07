@@ -1,0 +1,868 @@
+@font-face {
+    font-family: larsseit;
+    src: url(FONT/LarsseitMedium.otf);
+}
+@font-face {
+    font-family: larsseit-sm;
+    src: url(FONT/LarsseitThin.otf);
+}
+@font-face {
+    font-family: larsseit-italic-bold;
+    src: url(FONT/LarsseitExtraBoldItalic.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background-color: black;
+    padding: 10px 0px;
+    width: 100%;
+}
+nav .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+nav .navbar .right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    position: relative;
+}
+
+nav .navbar .right ul li {
+    overflow: hidden;
+}
+
+nav .navbar .right ul li a {
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0px;
+    font-family: larsseit;
+}
+
+nav .navbar .right ul button {
+    width: 147px;
+    height: 35px;
+    background-color: transparent;
+    border: transparent;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    top: 6px;
+}
+
+nav .navbar .right ul button .btnimg {
+
+    overflow: hidden;
+    background-color: rgb(191, 255, 0);
+    border: transparent;
+    border-radius: 100px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    /* rotate: 90deg; */
+}
+
+nav .navbar .right ul button .btnimg img {
+    color: white;
+    position: absolute;
+    left: 3px;
+    opacity: 0;
+}
+
+nav .navbar .right ul button .btnimg span {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+
+}
+
+nav .navbar .right ul button .btntxt {
+    color: aliceblue;
+    font-family: larsseit;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    position: absolute;
+    left: 42px;
+    top: 1px;
+
+    /* top: -32px; */
+}
+
+/* menubtn */
+.navbar .menu {
+    display: none;
+
+}
+
+/* navbar2 */
+
+.navbar2 {
+    display: none;
+}
+
+
+#hero{
+    font-family: larsseit;
+    width: 100%;
+    height: 100%;
+}
+
+/* section1 */
+.section1 .cont h1{
+    font-size: 150px;
+}
+
+/* Section2 */
+.section2{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 10rem;
+}
+.section2 .video{
+    width: 100%;
+    /* position: relative; */
+}
+.section2 .video video{
+    width: 40%;
+    float: inline-end;
+    
+}
+
+/* section3 */
+
+#hero .section3{
+    margin-top: 20%;
+    width: 100%;
+    /* background-color: aqua; */
+    
+
+}
+#hero .section3 .cont{
+    /* padding-left: 40px; */
+    width: 100%;
+}
+#hero .section3 .cont .heading h1{
+    font-size: 60px;
+    font-family: larsseit-sm;
+}
+#hero .section3 .cont .workbtn{
+    margin-top: 5rem;
+}
+#hero .section3 .cont .workbtn button{
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    border: 0.3px solid white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    color: aliceblue;
+    font-size: 200%;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+}
+#hero .section3 .cont .workbtn button .btn1{
+    color: black;
+    z-index: 11;
+}
+#hero .section3 .cont .workbtn button .btn2{
+    z-index: 11;
+}
+#hero .section3 .cont .workbtn button .bg{
+    width: 45%;
+    height: 48px;
+    background-color: aliceblue;
+    position: absolute;
+    left: 3px;
+    border: transparent;
+    border-radius: 50px;
+}
+#hero .section3 .cont .lists{
+    width: 100%;
+    position: relative;
+    height: 88vh;
+   
+}
+#hero .section3 .cont .lists .list1{
+    position: relative;
+}
+#hero .section3 .cont .lists .list1 ul{
+    display: block;
+}
+#hero .section3 .cont .lists .list1 ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.445);
+}
+#hero .section3 .cont .lists .list1 ul li div{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-size: 38px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#hero .section3 .cont .lists .list1 ul li:nth-child(7){
+    border-bottom: transparent;
+}
+#hero .section3 .cont .lists .list1 ul li div .arrow{
+    rotate: 45deg;
+}
+#hero .section3 .cont .lists .list1 .ul2{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: -7px;
+    display: none;
+}
+#hero .section3 .cont .lists .list1 .ul2 li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    border-bottom: transparent;
+}
+#hero .section3 .cont .lists .list1 .ul2 li div{
+display: flex;
+justify-content: space-between;
+width: 60%;
+font-size: 38px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+/* Section4 */
+
+#hero .section4 .cont{
+width: 100%;
+padding-left: 12rem;
+padding-top: 150px;
+/* color: black; */
+color: white;
+}
+#hero .section4 .cont .heading{
+    font-size: 60px;
+}
+#hero .section4 .cont .box1{
+    margin-top: 10rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    padding-bottom: 5rem;
+   /* gap; */
+}
+#hero .section4 .cont .box1 .left{
+    width: 31%;
+}
+#hero .section4 .cont .box1 .right{
+  width: 720px;
+    /* font-family: larsseit-sm; */
+}
+
+#hero.section4 .cont .box1 .right p{
+    font-family: larsseit-sm; 
+    font-size: 23.1715px;
+}
+#hero .section4 .cont .box1 .right ul{
+    padding-top: 7rem;
+    
+}
+#hero .section4 .cont .box1 .right ul li{
+    margin-top: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#hero .section4 .cont .box1 .right ul li .arrow{
+    rotate: 45deg;
+}
+#hero .section4 .cont .box1 .right ul li:first-child{
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+#hero .section4 .cont .box1 .right ul li a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+
+
+}
+#hero .section4 .cont hr{
+    width: 90%; margin-top: 10rem;
+}
+
+
+.section5{
+    width: 100%;
+    height: 90vh;
+    /* background-color: aqua; */
+}
+.section5 .cont{
+    padding-top: 20px;
+    padding-left: 10%;
+    display: flex;
+}
+.section5 .cont .heading{
+    width: 100%;
+}
+.section5 .cont .heading h1{
+    font-size: 40px;
+    /* font-family: larsseit; */
+    font-family: larsseit-italic-bold;
+    color: black;
+
+}
+.section5 .cont .box{
+    display: flex;
+    margin-top: 0rem;
+    margin-left: -16rem;
+}
+.section5 .cont .box .right{
+    width: 50%;
+    margin-left: 20rem;
+    margin-top: 6rem;
+}
+.section5 .cont .box .right img{
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.section5 .cont .box .left{
+    color: balck;
+    margin-top: 3rem;
+}
+.section5 .cont .box .left form{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    font-family: larsseit-italic-bold;
+}
+.section5 .cont .left form div{
+    display: flex;
+    font-size: 26px;
+    width: 104%;
+
+}
+.section5 .cont .left form div input{
+    background: transparent;
+    margin-left: 1rem;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding:11px 24px;
+    color: black;
+}
+.section5 .cont .left form button{
+    font-size: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button {
+    margin: 20px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+.btn-5 {
+    width: 130px;
+    height: 50px;
+    line-height: 42px;
+    padding: 0;
+    border: 2px solid black;
+    background: transparent;
+    background-color: black;
+    font-family: larsseit-italic-bold;
+    
+  /* background: linear-gradient(0deg, rgba(255,27,0,1) 0%, transparent 100%); */
+  }
+  .btn-5:hover {
+    color: black;
+    background: white;
+     box-shadow:none;
+  }
+  .btn-5:before,
+  .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:5px;
+    width:0;
+    background: rgb(255, 102, 0);
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+  }
+  .btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn-5:hover:before,
+  .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+
+
+
+@media  (min-width:601px) and (max-width:940px) {
+    nav .navbar {
+        padding-top: 20px;
+    }
+
+    nav .navbar .right ul {
+        display: none;
+
+    }
+
+    .navbar .menu {
+        display: block;
+        right: 33px;
+        top: 14px;
+        position: absolute;
+        font-size: 65px;
+        background-color: transparent;
+        border: transparent;
+        z-index: 2;
+        color: white;
+
+    }
+
+
+    .navbar .menu .menubtn {
+        display: block;
+
+    }
+
+    .navbar .menu .closebtn {
+        display: none;
+        color: black;
+        transition: all 1s ease-in;
+    }
+
+
+    .navbar2 {
+        width: 100%;
+        height: 100%;
+        background-color: aliceblue;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in linear;
+        display: none;
+
+    }
+
+    .navbar2 .navli ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar2 .navli ul li a {
+        font-family: larsseit;
+        color: black;
+        text-decoration: none;
+        font-size: 40px;
+    }
+
+    .navbar2 .navli ul button {
+        background-color: transparent;
+        border: transparent;
+        position: relative;
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+        border: 1px groove rgb(191, 255, 0);
+        padding: 5px;
+        margin-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+
+    .navbar2 .navli ul button .btnimg {
+
+        background-color: rgb(191, 255, 0);
+        border: transparent;
+        border-radius: 100px;
+        rotate: 90deg;
+    }
+
+    .navbar2 .navli ul button .btnimg img {
+        width: 46px;
+    }
+
+    .navbar2 .navli ul button .btntxt {
+        font-family: larsseit;
+        font-size: 40px;
+
+    }
+    .section2 {
+        width: 100%;
+        /* height: 29%; */
+        /* padding-bottom: 1rem; */
+    }
+   
+    .section2 .video video {
+        width: 98%;
+        position: unset;
+        justify-self: auto;
+        /* right: 65px; */
+    }
+    #hero .section3 .cont .heading h1 {
+        font-size: 47px;
+        font-family: larsseit-sm;
+    }
+    #hero .section3 .cont .lists .list1 ul li div {
+        width: 75%;
+        font-size: 35px;
+        padding-top: 1px;
+        padding-bottom: 15px;
+        gap: 4rem;
+    }
+    #hero .section3 .cont .lists .list1  {
+        margin-top: 2rem;
+    }
+    #hero .section3 .cont .lists {
+        width: 100%;
+        position: relative;
+        height: 60vh;
+    }
+    
+    #hero .section4 .cont {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    #hero .section4 .cont .heading {
+        font-size: 45px;
+    }
+    #hero .section4 .cont .box1 {
+        margin-top: 5rem;
+        font-size: 2.2rem;
+        flex-direction: column;
+        margin-bottom: -10%;
+    }
+    #hero .section4 .cont .box1 .left {
+        width: 100%;
+    }
+    #hero .section4 .cont .box1 .right {
+        width: 100%;
+        padding-top: 15px;
+       
+    }
+    #hero .section4 .cont .box1 .right ul{
+        padding-top: 3rem;
+    }
+    #hero .section4 .cont .box1 .right ul li a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+    }
+    #hero .section4 .cont hr{
+        max-width: 50%;
+        margin-top: 0rem;
+        /* margin-left: 5rem; */
+        margin: auto;
+    
+    }
+   
+    .section5 {
+        width: 100%;
+        height: 115vh;
+        /* background-color: aqua; */
+    }
+    .section5 .cont .box{
+        flex-direction: column-reverse;
+    }
+
+    .section5 .cont .box .right {
+        width: 82%;
+        margin-left: 8rem;
+        margin-top: 8rem;
+    }
+    .section5 .cont .box .left {
+        color: balck;
+        margin-top: 3rem;
+        margin-left: 5rem;
+    }
+
+
+
+}
+@media (max-width:600px) {
+    nav .navbar {
+        padding-top: 20px;
+    }
+
+    nav .navbar .right ul {
+        display: none;
+
+    }
+
+    .navbar .menu {
+        display: block;
+        right: 33px;
+        top: 0px;
+        position: absolute;
+        font-size: 40px;
+        background-color: transparent;
+        border: transparent;
+        z-index: 2;
+        color: white;
+
+    }
+
+
+    .navbar .menu .menubtn {
+        display: block;
+
+    }
+
+    .navbar .menu .closebtn {
+        display: none;
+        color: black;
+        transition: all 1s ease-in;
+    }
+
+
+    .navbar2 {
+        width: 100%;
+        height: 100%;
+        background-color: aliceblue;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in linear;
+        display: none;
+
+    }
+
+    .navbar2 .navli ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar2 .navli ul li a {
+        font-family: larsseit;
+        color: black;
+        text-decoration: none;
+        font-size: 40px;
+    }
+
+    .navbar2 .navli ul button {
+        background-color: transparent;
+        border: transparent;
+        position: relative;
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+        border: 1px groove rgb(191, 255, 0);
+        padding: 5px;
+        margin-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+
+    .navbar2 .navli ul button .btnimg {
+
+        background-color: rgb(191, 255, 0);
+        border: transparent;
+        border-radius: 100px;
+        rotate: 90deg;
+    }
+
+    .navbar2 .navli ul button .btnimg img {
+        width: 46px;
+    }
+
+    .navbar2 .navli ul button .btntxt {
+        font-family: larsseit;
+        font-size: 40px;
+
+    }
+    .section1 .cont h1{
+        font-size: 80px;
+    }
+
+/* .section2 */
+
+    .section2 .video video {
+        width: 98%;
+        position: unset;
+        /* right: 65px; */
+    }
+    .section2 {
+        width: 100%;
+        /* height: 29%; */
+        /* padding-bottom: 1rem; */
+    }
+
+   
+
+
+
+
+    /* section3  */
+    #hero .section3 .cont .heading h1 {
+        font-size: 25px;
+        /* width: 116%; */
+    }
+    #hero .section3 .cont{
+        padding-top: 0;
+    }
+    #hero .section3 .cont .workbtn button{
+        /* width: 345px; */
+        font-size: 143%;
+    }
+    #hero .section3 .cont .workbtn button .bg {
+        /* width: 170px; */
+    }
+    #hero .section3 .cont .lists .list1 ul li div {
+        width: 75%;
+        font-size: 24px;
+        padding-top: 1px;
+        padding-bottom: 15px;
+        gap: 2rem;
+    }
+    #hero .section3 .cont .lists .list1  {
+        margin-top: 2rem;
+    }
+    #hero .section3 .cont .lists .list1 .ul2 li div {
+        font-size: 21px;
+       
+    }
+    #hero .section3 .cont .workbtn button .bg {
+        height: 40px;
+    }
+    #hero .section4 .cont {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    #hero .section4 .cont .heading {
+        font-size: 27px;
+    }
+    #hero .section4 .cont .box1 {
+        margin-top: 5rem;
+        font-size: 1.5rem;
+        flex-direction: column;
+    }
+    #hero .section4 .cont .box1 .left {
+        width: 100%;
+    }
+    #hero .section4 .cont .box1 .right {
+        width: 100%;
+        padding-top: 15px;
+       
+    }
+    #hero .section4 .cont .box1 .right ul{
+        padding-top: 3rem;
+    }
+    #hero .section4 .cont .box1 .right ul li a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+    }
+    #hero .section4 .cont hr{
+        max-width: 50%;
+        margin-top: 0rem;
+    }
+
+    .section5 {
+        width: 100%;
+        height: 115vh;
+        /* background-color: aqua; */
+    }
+    .section5 .cont .box{
+        flex-direction: column-reverse;
+    }
+
+    .section5 .cont .box .right {
+        width: 82%;
+        margin-left: 8rem;
+        margin-top: 8rem;
+    }
+    .section5 .cont .box .left {
+        color: balck;
+        margin-top: 3rem;
+        margin-left: 5rem;
+    }
+  
+}
